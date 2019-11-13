@@ -1,0 +1,103 @@
+
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+
+}
+
+.dws-menu ul,
+.dws-menu ol {
+    list-style: none;
+}
+
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.dws-menu > ul li a{
+    display: block;
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+}
+
+.dws-menu > ul li{
+    position: relative;
+}
+
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+.dws-menu > ul li:first-child{
+    bordwe-left: 1px solid #b2b3b5;
+}
+
+.dws-menu > ul li:last-child{
+    bordwe-right: 1px solid #babbbb;
+}
+
+.dws-menu li a:hover{
+    color: #DB7093;
+    transition: all 0.3s ease;
+}
+
+/*Sub menu*/
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.dws-menu li > ul li{
+   border: 1px solid #ffdeef;
+}
+
+.dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #ffdeef;
+}
+
+.dws-menu li > ul li ul{
+    position:  absolute;
+    right: -150px;
+    top: 0;
+}
+
+.dws-menu li:hover > ul{
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a.rollover {
+
+    background: url(giphy.gif); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 320px; /* Ширина рисунка */
+    height: 270px; /*  Высота рисунка */
+
+}
+a.rollover:hover {
+    background: url(giphy2.gif); /* Путь к файлу с заменяемым рисунком  */
+
+}
+
