@@ -1,0 +1,70 @@
+body{
+    background-image: url("../images/sky-background.jpg");
+    background-attachment: fixed ;
+    background-position: top center;
+}
+
+.hovergallery img{
+    -webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+    -o-transform:scale(0.8); /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+    opacity: 0.7; /*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+
+.hovergallery img:hover{
+    -webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+    -moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+    -o-transform:scale(1.1); /*Opera: масштабирование*/
+    box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+
+    -webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+    -moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+    opacity: 1;
+}
+
+a.but {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 15px 25px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+    color: #DB7093;
+    background: #ffdeef;
+    border-bottom: 5px solid #DB7093;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+a.but:hover {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.center {
+    margin: 0 auto;
+    width: 550px;
+    padding-top: 10%;
+
+}
+
+p {
+    line-height: 1.5;
+}
+
+.mid{
+    border-radius: 15px;
+    padding: 5%;
+    margin: 0 auto;
+    background: rgba(274,237,255, 0.5);
+    width: 80%;
+    font: 14px/16px Times New Roman;
+    color: #222;
+    text-align: justify;
+}
